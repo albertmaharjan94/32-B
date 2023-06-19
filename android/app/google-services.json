@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "200842013574",
+    "project_id": "batch-32-b",
+    "storage_bucket": "batch-32-b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200842013574:android:300b0c730e653538979a07",
+        "android_client_info": {
+          "package_name": "com.example.my_first_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200842013574-mrl3o15unt4s9632f028a1arljhfduru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJOGCX-8O7OhFUge18BjAgm13bT98BVyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200842013574-mrl3o15unt4s9632f028a1arljhfduru.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "200842013574-rhvmp7d1pse74nslu0gvpf1vjvnehrn6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.myFirstApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
