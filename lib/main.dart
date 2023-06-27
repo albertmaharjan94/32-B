@@ -2,7 +2,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:my_first_app/AddScreen.dart';
+import 'package:my_first_app/NotificationDemo.dart';
 import 'package:my_first_app/UpdateScreen.dart';
+import 'package:my_first_app/UploadScreen.dart';
+import 'package:my_first_app/services/NotificationService.dart';
 import 'package:my_first_app/viewmodels/product_viewmodel.dart';
 import 'package:provider/provider.dart';
 
@@ -18,6 +21,7 @@ Future<void> main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  NotificationService.initialize();
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
@@ -35,14 +39,16 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        initialRoute: "/login",
+        initialRoute: "/notification-screen",
         routes: {
           "/login": (context) => LoginScreen(),
           "/register": (context) => RegisterScreen(),
           "/forget-password": (context) => ForgetScreen(),
           "/dasboard": (context) => DashBoardScreen(),
           "/add-screen": (context)=> AddScreen(),
-          "/update-screen": (context)=>UpdateScreen()
+          "/update-screen": (context)=>UpdateScreen(),
+          "/upload-screen": (context)=>UploadScreen(),
+          "/notification-screen": (context)=>NotificationDemo(),
         },
       ),
     );
